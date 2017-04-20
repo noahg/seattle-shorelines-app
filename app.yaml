@@ -1,0 +1,26 @@
+#serve front-end app as static files on gcloud
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# Using @angular/cli to build angular into staticfolder /dist
+# so skip everything but the folder /dist and  this file app.yaml
+skip_files:
+- ^assets$
+- ^config$
+- ^node_modules$
+- ^public$
+- ^src$
+- .gitignore
+- karma.conf.js
+- package.json
+- webpack.config
+
+handlers:
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+
+- url: /(.*)
+  static_files: dist/\1
+  upload: dist/(.*)
