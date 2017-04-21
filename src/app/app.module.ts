@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
+import { ShorelineListComponent } from './shoreline-list/shoreline-list.component';
+import { ShorelineDetailsComponent } from './shoreline-details/shoreline-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShorelineListComponent,
+    ShorelineDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
