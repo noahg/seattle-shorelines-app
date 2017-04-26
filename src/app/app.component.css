@@ -1,0 +1,38 @@
+.container {
+    height: 100%;
+    bottom: 0px;
+}
+/* naming below is position of panel in landscapePortrait */
+.leftTop-panel {
+    background-color: lightblue;
+}
+.rightBottom-panel {
+    background-color: palegreen;
+    overflow-y: scroll;
+}
+@media (orientation: landscape ) {
+    .leftTop-panel {
+        position: absolute;
+        height: 100%;
+        width: 50%
+    }
+    .rightBottom-panel {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0px;
+    }
+}
+@media (orientation: portrait ) {
+    .leftTop-panel {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+    }
+    .rightBottom-panel {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        bottom: 0px;
+    }
+}

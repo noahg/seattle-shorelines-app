@@ -1,15 +1,7 @@
-<div>
-  <md-toolbar color="primary">
-    <span>Seattle Shorelines</span>
-  </md-toolbar>
-</div>
-
-<div class="containerX">
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box" >
-
-        <div fxFlex> Map goes here</div>
-        <div fxFlex>
-            <router-outlet></router-outlet>
-        </div>
+<div class="container">
+    <div class="leftTop-panel">Map goes here</div>
+    <div class="rightBottom-panel">
+        <router-outlet>
+        </router-outlet>
     </div>
 </div>
