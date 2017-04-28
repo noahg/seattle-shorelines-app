@@ -43,3 +43,6 @@ Thumbs.db
 
 # Firebase
 /functions/node_modules
+
+# Secret Keys
+/src/environments/environment.secret.ts
