@@ -2,21 +2,21 @@
     height: 100%;
     bottom: 0px;
 }
-/* naming below is position of panel in landscapePortrait */
-.leftTop-panel {
-    background-color: lightblue;
-}
-.rightBottom-panel {
+/* naming below is position of panel in landscape-portrait */
+.left-bottom-panel {
     background-color: palegreen;
     overflow-y: scroll;
 }
+.right-top-panel {
+    background-color: lightblue;
+}
 @media (orientation: landscape ) {
-    .leftTop-panel {
+    .left-bottom-panel {
         position: absolute;
         height: 100%;
         width: 50%
     }
-    .rightBottom-panel {
+    .right-top-panel {
         position: absolute;
         height: 100%;
         width: 50%;
@@ -24,15 +24,15 @@
     }
 }
 @media (orientation: portrait ) {
-    .leftTop-panel {
+    .left-bottom-panel {
         position: absolute;
-        height: 50%;
-        width: 100%;
-    }
-    .rightBottom-panel {
-        position: absolute;
-        height: 50%;
+        height: 60%;
         width: 100%;
         bottom: 0px;
+    }
+    .right-top-panel {
+        position: absolute;
+        height: 40%;
+        width: 100%;
     }
 }
