@@ -36,3 +36,14 @@
         width: 100%;
     }
 }
+
+.site-logo {
+    margin-right: .6em;
+    margin-bottom: .4em;
+    font-size: 2em;
+}
+
+.site-name {
+    font-family: Bangers;
+    font-size: 1.8em;
+}
