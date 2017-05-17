@@ -2,6 +2,6 @@
   [latitude]="lat" 
   [longitude]="lng"
   [zoom]=12>
-    <agm-data-layer [geoJson]="shorelines">
+    <agm-data-layer [geoJson]="shorelines" (layerClick)="layerClicked($event)">
     </agm-data-layer>
 </agm-map>

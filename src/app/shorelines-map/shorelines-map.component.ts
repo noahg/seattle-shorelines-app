@@ -17,7 +17,10 @@ export class ShorelinesMapComponent implements OnInit {
 
   ngOnInit() {
     this.shorelines = shorelinesData;
-    console.log(this.shorelines);
+  }
+
+  layerClicked(clickEvent) {
+    console.log(clickEvent)
   }
 
 }
