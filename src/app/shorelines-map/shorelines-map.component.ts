@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-
+import shorelinesData from '../../data/ShorelineStreetEndsLayer.json';
 
 @Component({
   selector: 'shorelines-map',
@@ -11,9 +11,13 @@ export class ShorelinesMapComponent implements OnInit {
   lat: number = 47.606209;
   lng: number = -122.332071;
 
+  shorelines;
+
   constructor() { }
 
   ngOnInit() {
+    this.shorelines = shorelinesData;
+    console.log(this.shorelines);
   }
 
 }
