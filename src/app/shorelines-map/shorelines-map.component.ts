@@ -9,11 +9,11 @@ import shorelinesData from '../../data/ShorelineStreetEndsLayer.json';
 })
 export class ShorelinesMapComponent implements OnInit {
   @Output() siteClicked = new EventEmitter;
-  //rough-in center for Seattle
-  lat: number = 47.606209;
-  lng: number = -122.332071;
-  //id fieldname used in Seattle SDOT shapefile
-  featureIdFieldname = 'NO_'
+  // rough-in center for Seattle
+  lat = 47.606209;
+  lng = -122.332071;
+  // id fieldname used in Seattle SDOT shapefile
+  featureIdFieldname = 'NO_';
   shorelines;
 
   constructor() { }
@@ -23,8 +23,8 @@ export class ShorelinesMapComponent implements OnInit {
   }
 
   layerClicked(clickEvent) {
-    console.log(clickEvent.feature.f[this.featureIdFieldname])
-    this.siteClicked.emit(clickEvent.feature.f[this.featureIdFieldname])
+    console.log(clickEvent.feature.f[this.featureIdFieldname]);
+    this.siteClicked.emit(clickEvent.feature.f[this.featureIdFieldname]);
   }
 
 }
