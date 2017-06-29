@@ -29,7 +29,7 @@ import { ShorelinesMapComponent } from './shorelines-map/shorelines-map.componen
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     AppRouting,
