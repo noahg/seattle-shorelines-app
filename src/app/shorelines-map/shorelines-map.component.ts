@@ -8,7 +8,7 @@ import shorelinesData from '../../data/ShorelineStreetEndsLayer.json';
   styleUrls: ['./shorelines-map.component.css']
 })
 export class ShorelinesMapComponent implements OnInit {
-  @Output() siteClicked = new EventEmitter;
+  @Output() shorelineClicked = new EventEmitter;
   // rough-in center for Seattle
   lat = 47.606209;
   lng = -122.332071;
@@ -24,7 +24,7 @@ export class ShorelinesMapComponent implements OnInit {
 
   layerClicked(clickEvent) {
     console.log(clickEvent.feature.f[this.featureIdFieldname]);
-    this.siteClicked.emit(clickEvent.feature.f[this.featureIdFieldname]);
+    this.shorelineClicked.emit(clickEvent.feature.f[this.featureIdFieldname]);
   }
 
 }
