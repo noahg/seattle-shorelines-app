@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { ShorelineService } from './../shoreline.service';
 @Component({
-  selector: 'shorelines-map',
+  selector: 'app-shorelines-map',
   templateUrl: './shorelines-map.component.html',
   styleUrls: ['./shorelines-map.component.css']
 })
