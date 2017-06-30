@@ -7,4 +7,4 @@ export const AppRouting = RouterModule.forRoot([
     {path: '', component: ShorelineListComponent},
     {path: 'shoreline/:dashedShorelineName', component: ShorelineDetailsComponent},
     {path: '**', component: ShorelineListComponent},
-])
+]);

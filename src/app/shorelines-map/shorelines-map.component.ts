@@ -15,7 +15,7 @@ export class ShorelinesMapComponent {
   featureIdFieldname = 'NO_';
   shorelines;
 
-  constructor(shorelineService: ShorelineService) { 
+  constructor(shorelineService: ShorelineService) {
     this.shorelines = shorelineService.getShorelines();
   }
 
