@@ -16,7 +16,7 @@ export class ShorelinesMapComponent {
   shorelines;
 
   constructor(shorelineService: ShorelineService) {
-    this.shorelines = shorelineService.getShorelines();
+    this.shorelines = shorelineService.getShorelinesGeojson();
   }
 
   layerClicked(clickEvent) {

@@ -5,10 +5,17 @@ import shorelinesData from '../data/ShorelineStreetEndsLayer.json';
 @Injectable()
 export class ShorelineService {
   shorelines;
+  shorelinesGeojson;
 
   public getShorelines() {
-      this.shorelines = shorelinesData;
+      // return an array of shoreline locations not geojson object
+      this.shorelines = shorelinesData['features'];
       return this.shorelines;
+  }
+
+    public getShorelinesGeojson() {
+      this.shorelinesGeojson = shorelinesData;
+      return this.shorelinesGeojson;
   }
 
   constructor() { }
