@@ -1,6 +1,6 @@
 <div fxLayoutWrap fxLayoutAlign="space-around">
   <md-card  *ngFor="let shoreline of shorelines">
-    <md-card-title>{{shoreline.properties.NAME}}</md-card-title>
+    <md-card-title>{{shoreline.properties.NAME | slice: 0:25 }}</md-card-title>
     <img md-card-image src="http://placehold.it/350x200">
   </md-card>
 </div>
