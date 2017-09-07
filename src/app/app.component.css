@@ -3,37 +3,35 @@
     bottom: 0px;
 }
 /* naming below is position of panel in landscape-portrait */
-.left-bottom-panel {
+.list-panel {
     background-color: palegreen;
     overflow-y: scroll;
 }
-.right-top-panel {
+.map-panel {
     background-color: lightblue;
 }
 @media (orientation: landscape ) {
-    .left-bottom-panel {
+    .list-panel {
         position: absolute;
         height: 100%;
         width: 50%
     }
-    .right-top-panel {
+    .map-panel {
         position: absolute;
-        height: 100%;
+        height: calc(100% - 56px);
         width: 50%;
         right: 0px;
     }
 }
 @media (orientation: portrait ) {
-    .left-bottom-panel {
+    .list-panel {
         position: absolute;
-        height: 60%;
+        height: calc(100% - 56px);
         width: 100%;
         bottom: 0px;
     }
-    .right-top-panel {
-        position: absolute;
-        height: 40%;
-        width: 100%;
+    .map-panel {
+        display: none;
     }
 }
 
