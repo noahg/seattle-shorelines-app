@@ -1,3 +1,9 @@
 md-card {
     margin-top: 10px;
+    max-width: 300px;
+    max-height: 340px;
+}
+
+.street-end-thumbnail {
+    max-height: 200px;
 }
