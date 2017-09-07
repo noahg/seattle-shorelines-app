@@ -2,7 +2,7 @@
     height: 100%;
     bottom: 0px;
 }
-/* naming below is position of panel in landscape-portrait */
+
 .list-panel {
     background-color: palegreen;
     overflow-y: scroll;
@@ -36,9 +36,10 @@
 }
 
 .site-logo {
-    margin-right: .6em;
-    margin-bottom: .4em;
-    font-size: 2em;
+    height: 100%;
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .site-name {
