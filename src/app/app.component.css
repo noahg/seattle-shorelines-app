@@ -18,29 +18,27 @@
 .list-panel {
     background-color: palegreen;
     overflow-y: scroll;
+    height: calc(100% - 64px);
+    position: absolute;
 }
 .map-panel {
     background-color: lightblue;
 }
 @media (orientation: landscape ) {
     .list-panel {
-        position: absolute;
-        height: 100%;
-        width: 50%
+        width: 50%;
     }
     .map-panel {
         position: absolute;
-        height: calc(100% - 56px);
+        height: calc(100% - 64px);
         width: 50%;
         right: 0px;
     }
 }
 @media (orientation: portrait ) {
     .list-panel {
-        position: absolute;
-        height: calc(100% - 56px);
         width: 100%;
-        bottom: 0px;
+        height: calc(100% - 56px);
     }
     .map-panel {
         display: none;
