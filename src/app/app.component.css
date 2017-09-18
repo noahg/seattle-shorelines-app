@@ -22,7 +22,7 @@
     position: absolute;
 }
 .map-panel {
-    background-color: lightblue;
+    background-color: #53CDF2;
 }
 @media (orientation: landscape ) {
     .list-panel {
