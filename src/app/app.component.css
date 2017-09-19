@@ -1,3 +1,11 @@
+md-toolbar {
+    background: #588CCB; 
+}
+
+.md-title {
+    text-align: center;
+}
+
 .container {
     height: 100%;
     bottom: 0px;
@@ -11,18 +19,19 @@
 }
 
 .site-name {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans';
     font-size: 1.8em;
 }
 
 .list-panel {
-    background-color: palegreen;
+    background: #DBECC1;
+
     overflow-y: scroll;
     height: calc(100% - 64px);
     position: absolute;
 }
 .map-panel {
-    background-color: #53CDF2;
+    background: lightcyan;
 }
 @media (orientation: landscape ) {
     .list-panel {

@@ -4,6 +4,10 @@ md-card {
     max-height: 340px;
 }
 
+md-card-title {
+    font-weight: bold;
+}
+
 .street-end-thumbnail {
     max-height: 200px;
 }
