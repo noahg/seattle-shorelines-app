@@ -2,8 +2,18 @@ md-toolbar {
     background: #588CCB; 
 }
 
-.md-title {
-    text-align: center;
+@media(max-width:400px) {
+    .hide-400-below {
+        display: none;
+    }
+}
+
+.site-name {
+    font-family: Oswald, arial;
+    font-size: 2em;
+    margin: auto;
+    color: white;
+    font-weight: bold;
 }
 
 .container {
@@ -11,21 +21,8 @@ md-toolbar {
     bottom: 0px;
 }
 
-.site-logo {
-    height: 100%;
-    font-size: 0.8em;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-
-.site-name {
-    font-family: 'Open Sans';
-    font-size: 1.8em;
-}
-
 .list-panel {
     background: #DBECC1;
-
     overflow-y: scroll;
     height: calc(100% - 64px);
     position: absolute;
