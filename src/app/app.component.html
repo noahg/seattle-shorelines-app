@@ -5,42 +5,39 @@
 </md-toolbar>
 <div class="container">
     <div class="list-panel">
-        <md-expansion-panel>
-            <md-expansion-panel-header>
-                <md-panel-title>
-                    Interesting! Tell me more...
-                </md-panel-title>
-                <md-panel-description class="hide-400-below">
-                    Learn about your public shoreline parks.
-                </md-panel-description>
-            </md-expansion-panel-header>
-            <md-tab-group>
+            <md-tab-group class="info-panel">
                 <md-tab>
                     <ng-template md-tab-label>
-                        The Law
+                        About
                     </ng-template>
-                    <h1>1996 Law</h1>
-                    <p>In 1996, the Seattle City Council passed a resolution to secure these sites for the public.</p> 
-                    <p>Read more at the City of Seattle's webpage about these street ends.</p>
+                    <div class="tab-content">
+                        <h3>Public Shoreline Access</h3>
+                        <p>In 1996, the Seattle City Council passed a resolution to secure these sites for the public.</p> 
+                        <p>Read more at the City of Seattle's webpage about these street ends.</p>
+                    </div>
                 </md-tab>
                 <md-tab>
                     <ng-template md-tab-label>
                         Get Involved
                     </ng-template>
-                    <h1>Improve Your City</h1>
-                    <p>You can improve a site near you by getting together with your neighbors. Join our mailing list to be updated about local organizing teams.
-                    </p>
+                    <div class="tab-content">
+                        <h3>Improve Our City</h3>
+                        <p>You can improve a site near you by getting together with your neighbors. Join our mailing list to be updated about local organizing teams.
+                        </p>
+                    </div>
                 </md-tab>
                 <md-tab>
                     <ng-template md-tab-label>
-                        About
+                        Inspiration
                     </ng-template>
-                    <h1>The Idea</h1>
-                    <p>Hi, I'm Noah. I live in Seattle and love enjoying our beautiful waterfront and water resources. 
-                        I have noticed that public shoreline access is <b>much easier to see from the water</b> than from land.</p>
-                </md-tab>
+                    <div class="tab-content">
+                        <h3>About This Site</h3>
+                        <p>Hi,<a href="https://www.noahglusenkamp.com"> I'm Noah</a>. I live in Seattle and love enjoying our beautiful waterfront and water resources. 
+                        I have noticed that public shoreline access is <b>much easier to see from the water</b> than from land.
+                        </p>
+                    </div>
+                    </md-tab>
             </md-tab-group>  
-        </md-expansion-panel>
         <router-outlet>
         </router-outlet>
     </div>
