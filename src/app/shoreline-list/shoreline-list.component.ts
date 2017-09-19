@@ -12,7 +12,6 @@ export class ShorelineListComponent implements OnInit {
 
   constructor(shorelineService: ShorelineService) {
     this.shorelines = shorelineService.getShorelines();
-    console.log(this.shorelines);
   }
 
   ngOnInit() {

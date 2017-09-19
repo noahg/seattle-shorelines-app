@@ -20,7 +20,7 @@ export class ShorelinesMapComponent {
   }
 
   layerClicked(clickEvent) {
-    // console.log(clickEvent.feature.f[this.featureIdFieldname]);
+    console.log(clickEvent.feature.f[this.featureIdFieldname]);
     this.shorelineClicked.emit(clickEvent.feature.f[this.featureIdFieldname]);
   }
 
