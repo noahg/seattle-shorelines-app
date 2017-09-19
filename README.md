@@ -1,3 +1,8 @@
-# SeattleShorelinesApp
+# Seattle Shorelines
+## "Street End" Parks
 
-Find the nearest public shoreline in Seattle.
+These shoreline access points are public and awesome.
+
+## History
+In 1996 the City of Seattle...
+
