@@ -18,6 +18,11 @@ export class ShorelineService {
       return this.shorelinesGeojson;
   }
 
+  public getShoreline(id) {
+    console.log(this.shorelines);
+    return id;
+  }
+
   constructor() { }
 
 }
