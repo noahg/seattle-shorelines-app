@@ -15,7 +15,7 @@ export class ShorelineService {
   public getShorelines() {
     // return an array of shoreline locations not geojson object
       return shorelinesData['features'];
-}
+  }
 
   public getShoreline(id) {
       return this.getSingleShorelineFromGeojson(id, this.idFieldname);
