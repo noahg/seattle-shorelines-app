@@ -6,6 +6,7 @@ import shorelinesData from '../data/ShorelineStreetEndsLayer.json';
 @Injectable()
 export class ShorelineService {
 
+  // id fieldname used in Seattle SDOT origin file
   idFieldname = 'NO_';
 
   public getShorelinesGeojson() {
@@ -19,6 +20,10 @@ export class ShorelineService {
 
   public getShoreline(id) {
       return this.getSingleShorelineFromGeojson(id, this.idFieldname);
+  }
+
+  public getIdFieldname() {
+    return this.idFieldname;
   }
 
   private getSingleShorelineFromGeojson(id, idFieldname) {

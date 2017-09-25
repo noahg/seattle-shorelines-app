@@ -9,11 +9,12 @@ import { ShorelineService } from './../shoreline.service';
 })
 export class ShorelinesMapComponent {
   @Output() shorelineClicked = new EventEmitter;
-  // rough-in center for Seattle
+
+  // approx center for Seattle
   lat = 47.606209;
   lng = -122.332071;
-  // id fieldname used in Seattle SDOT shapefile
-  featureIdFieldname = 'NO_';
+
+  idFieldname;
   shorelines;
   private router : Router;
 
@@ -23,10 +24,11 @@ export class ShorelinesMapComponent {
     ){
     this.shorelines = shorelineService.getShorelinesGeojson();
     this.router = r;
+    this.idFieldname = shorelineService.getIdFieldname();
   }
 
   layerClicked(clickEvent) {
-    const shorelineClicked = clickEvent.feature.f[this.featureIdFieldname];
+    const shorelineClicked = clickEvent.feature.f[this.idFieldname];
       this.router.navigate(['/shoreline', shorelineClicked])
   }
 
