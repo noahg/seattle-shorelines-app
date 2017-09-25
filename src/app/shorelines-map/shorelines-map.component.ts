@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { ShorelineService } from './../shoreline.service';
 @Component({
@@ -14,14 +15,19 @@ export class ShorelinesMapComponent {
   // id fieldname used in Seattle SDOT shapefile
   featureIdFieldname = 'NO_';
   shorelines;
+  private router : Router;
 
-  constructor(shorelineService: ShorelineService) {
+  constructor(
+      shorelineService: ShorelineService,
+      r: Router
+    ){
     this.shorelines = shorelineService.getShorelinesGeojson();
+    this.router = r;
   }
 
   layerClicked(clickEvent) {
     const shorelineClicked = clickEvent.feature.f[this.featureIdFieldname];
-    this.shorelineClicked.emit({shorelineClicked: shorelineClicked});
+      this.router.navigate(['/shoreline', shorelineClicked])
   }
 
 }
