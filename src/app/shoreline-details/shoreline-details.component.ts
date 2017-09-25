@@ -1,4 +1,7 @@
+import { ShorelineService } from './../shoreline.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-shoreline-details',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShorelineDetailsComponent implements OnInit {
 
-  constructor() { }
+  shoreline;
+
+  constructor(
+    private route: ActivatedRoute,
+    private shorelineService: ShorelineService
+  ) {}
 
   ngOnInit() {
+    this.route.paramMap
+      .subscribe(params => {
+        let id = +params.get('id')
+        this.shoreline = this.shorelineService.getShoreline(id);
+      })
   }
 
 }
