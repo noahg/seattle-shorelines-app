@@ -26,7 +26,7 @@ md-toolbar {
     bottom: 0px;
 }
 
-.list-panel {
+.shorelines-panel {
     background: #DBECC1;
     overflow-y: scroll;
     height: calc(100% - 64px);
@@ -47,7 +47,7 @@ md-toolbar {
     background: lightcyan;
 }
 @media (orientation: landscape ) {
-    .list-panel {
+    .shorelines-panel {
         width: 50%;
     }
     .map-panel {
@@ -58,7 +58,7 @@ md-toolbar {
     }
 }
 @media (orientation: portrait ) {
-    .list-panel {
+    .shorelines-panel {
         width: 100%;
         height: calc(100% - 56px);
     }
