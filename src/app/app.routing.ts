@@ -4,7 +4,7 @@ import { ShorelineListComponent } from './shoreline-list/shoreline-list.componen
 import { ShorelineDetailsComponent } from './shoreline-details/shoreline-details.component';
 
 export const AppRouting = RouterModule.forRoot([
-    {path: '', component: ShorelineListComponent},
+    {path: ':id', component: ShorelineListComponent},
     {path: 'shoreline/:id', component: ShorelineDetailsComponent},
     {path: '**', component: ShorelineListComponent},
 ]);
