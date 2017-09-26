@@ -1,6 +1,5 @@
 .show-all-button {
-    position: absolute;
-    right: 0px;
+
     margin: 6px;
 }
 
@@ -11,5 +10,15 @@
 }
 
 .shoreline-name {
-    margin: 24px 0px 24px 16px;
+    margin: 24px 0px 24px 0px;
+}
+
+.shoreline-image {
+   min-width:400px;
+   max-height:300px;
+}
+
+.shoreline-details-wrapper {
+    padding: 0px 16px 16px 16px;
+    position: relative;
 }

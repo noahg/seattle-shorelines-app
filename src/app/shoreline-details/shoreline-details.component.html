@@ -1,5 +1,13 @@
-<div fxLayoutWrap fxLayoutAlign="left">
+
+<button md-raised-button fxFlexAlign="start" routerLink="/" class="show-all-button">Show All</button>
+<div class="shoreline-details-wrapper">
   <h1 class="shoreline-name">{{shoreline.NAME}}</h1>
-  <button md-raised-button fxFlexAlign="start" routerLink="/" class="show-all-button">Show All</button>
-  <img src="../../assets/street-end-thumbnails/{{ shoreline.NO_ }}.jpg">
+  <h3>SDOT</h3>
+  <p>{{shoreline.STATUS}}</p>
+  <h4># {{shoreline.NO_}}</h4>
+  <p>{{shoreline.DESCRIPTIO}}</p>
+  <img 
+  src="../../assets/street-end-thumbnails/{{ shoreline.NO_ }}.jpg"
+  class="shoreline-image"
+>
 </div>
