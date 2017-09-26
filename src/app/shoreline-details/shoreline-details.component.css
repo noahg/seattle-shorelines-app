@@ -1,4 +1,15 @@
 .show-all-button {
     position: absolute;
     right: 0px;
+    margin: 6px;
+}
+
+@media (orientation: landscape ) {
+    .shoreline-name {
+        margin-left: 6px;
+    }
+}
+
+.shoreline-name {
+    margin-left: 24px;
 }
