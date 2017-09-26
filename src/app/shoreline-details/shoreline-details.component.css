@@ -11,5 +11,9 @@
 }
 
 .shoreline-name {
-    margin-left: 24px;
+    margin: 24px 0px 24px 16px;
+}
+
+.list-panel {
+    background: #DBECC1;
 }
