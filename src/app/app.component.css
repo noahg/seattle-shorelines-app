@@ -27,7 +27,6 @@ md-toolbar {
 }
 
 .shorelines-panel {
-    background: #DBECC1;
     overflow-y: scroll;
     height: calc(100% - 64px);
     position: absolute;
