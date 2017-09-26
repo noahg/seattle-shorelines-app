@@ -19,6 +19,7 @@ md-toolbar {
     margin: auto;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .container {
