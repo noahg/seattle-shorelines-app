@@ -11,3 +11,7 @@ md-card-title {
 .street-end-thumbnail {
     max-height: 200px;
 }
+
+.shoreline-name {
+    cursor: pointer;
+}
