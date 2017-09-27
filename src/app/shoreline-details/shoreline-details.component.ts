@@ -25,4 +25,13 @@ export class ShorelineDetailsComponent implements OnInit {
       })
   }
 
+  ngAfterViewInit() {
+    this.scrollTo()
+  }
+
+  private scrollTo() {
+      document.getElementById('shoreline-details-wrapper').scrollIntoView();
+  }
+
+
 }
