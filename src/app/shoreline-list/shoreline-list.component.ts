@@ -20,7 +20,6 @@ export class ShorelineListComponent implements OnInit {
     this.route.paramMap
       .subscribe(params => {
         this.selectedShoreline = +params.get('id')
-        console.log(this.selectedShoreline)
       })
   }
 
