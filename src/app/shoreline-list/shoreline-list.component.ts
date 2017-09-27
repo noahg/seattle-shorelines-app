@@ -29,7 +29,10 @@ export class ShorelineListComponent implements OnInit {
   }
 
   private scrollTo(element) {
+    //element will not exist when navigating *back* to root route
+    if (element) {
       document.getElementById(element).scrollIntoView();
+    }
   }
 
 }
