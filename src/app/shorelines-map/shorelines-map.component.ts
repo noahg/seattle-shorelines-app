@@ -14,16 +14,14 @@ export class ShorelinesMapComponent {
   lat = 47.606209;
   lng = -122.332071;
 
-  idFieldname;
   shorelines;
-  private router : Router;
+  idFieldname;
 
   constructor(
       shorelineService: ShorelineService,
-      r: Router
+      private router: Router
     ){
     this.shorelines = shorelineService.getShorelinesGeojson();
-    this.router = r;
     this.idFieldname = shorelineService.getIdFieldname();
   }
 
