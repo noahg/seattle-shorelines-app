@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -17,13 +17,15 @@ import { AppComponent } from './app.component';
 import { ShorelineListComponent } from './shoreline-list/shoreline-list.component';
 import { ShorelineDetailsComponent } from './shoreline-details/shoreline-details.component';
 import { ShorelinesMapComponent } from './shorelines-map/shorelines-map.component';
+import { InfoPanelComponent } from './info-panel/info-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShorelineListComponent,
     ShorelineDetailsComponent,
-    ShorelinesMapComponent
+    ShorelinesMapComponent,
+    InfoPanelComponent
   ],
   imports: [
     BrowserModule,
