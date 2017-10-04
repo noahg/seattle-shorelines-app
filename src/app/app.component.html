@@ -5,56 +5,8 @@
 </md-toolbar>
 <div class="container">
     <div class="shorelines-panel">
-            <md-tab-group class="info-panel">
-                <md-tab>
-                    <ng-template md-tab-label>
-                        About
-                    </ng-template>
-                    <div class="tab-content">
-                        <h3>Here's the deal</h3>
-                        <p>The City of Seattle designated 149 public streets in Seattle that end on waterfronts as special rights of way to be preserved and improved for public use.
-                        </p> 
-                        <p>Though some street ends have been improved for public use, nearly two-thirds are in need of improvement, overgrown, or have private encroachments.
-                        </p>
-                    </div>
-                </md-tab>
-                <md-tab>
-                    <ng-template md-tab-label>
-                        Inspiration
-                    </ng-template>
-                    <div class="tab-content">
-                        <h3>Share the Stoke</h3>
-                        <p>My name is<a href="https://www.noahglusenkamp.com"> Noah Glusenkamp</a>,                        
-                            I live in Seattle and often enjoy our beautiful waterfront and water resources. I discovered the City of Seattle's <a href="http://www.seattle.gov/transportation/stuse_stends.htm">shoreline street-end program</a> and want to support it.
-                        </p>
-                        <p>My goal is to identify local organizing teams to:
-                            <ol>
-                                <li>Build collective energy</li>
-                                <li>Gather photos (from land and water)</li>
-                                <li>Make plans and apply for permits</li>
-                            </ol>
-                    </div>
-                </md-tab>
-                <md-tab>
-                        <ng-template md-tab-label>
-                            How to help
-                        </ng-template>
-                        <div class="tab-content">
-                            <h3>Join the team</h3>
-                            <p>Sign up to be notified when we launch local organizing teams.
-                            </p>
-                            <p>People working together in community can generate change that yield benefits for years to come.
-                            </p>
-                            <form>
-                                <md-form-field>
-                                    <input mdInput placeholder="e-mail"><button md-button>Join</button>
-                                </md-form-field>
-                            </form>
-                        </div>
-                    </md-tab>
-            </md-tab-group> 
-        <router-outlet>
-        </router-outlet>
+        <info-panel></info-panel>
+        <router-outlet></router-outlet>
     </div>
     <app-shorelines-map class="map-panel"></app-shorelines-map>
 </div>
