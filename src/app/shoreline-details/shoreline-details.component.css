@@ -14,8 +14,8 @@
 }
 
 .shoreline-image {
-   min-width:400px;
-   max-height:300px;
+   max-width: 100%;
+   height: auto;
 }
 
 .shoreline-details-wrapper {
