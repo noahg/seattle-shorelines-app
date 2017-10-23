@@ -7,23 +7,3 @@
 .tab-content {
     padding: 0 16px 16px 16px;
 }
-
-form {
-    width: 100%;
-}
-
-@media (orientation: portrait){
-    md-form-field {
-        width: 60%;
-    }
-}
-
-@media (orientation: landscape){
-    md-form-field {
-        width: 70%;
-    }
-}
-
-button { 
-    margin-left: 6px;
-}

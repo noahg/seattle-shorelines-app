@@ -18,6 +18,7 @@ import { ShorelineListComponent } from './shoreline-list/shoreline-list.componen
 import { ShorelineDetailsComponent } from './shoreline-details/shoreline-details.component';
 import { ShorelinesMapComponent } from './shorelines-map/shorelines-map.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
+import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { InfoPanelComponent } from './info-panel/info-panel.component';
     ShorelineListComponent,
     ShorelineDetailsComponent,
     ShorelinesMapComponent,
-    InfoPanelComponent
+    InfoPanelComponent,
+    NewsletterFormComponent
   ],
   imports: [
     BrowserModule,
