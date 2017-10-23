@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'newsletter-form',
@@ -10,6 +11,10 @@ export class NewsletterFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  submit(form){
+    console.log(form.value.email)
   }
 
 }
