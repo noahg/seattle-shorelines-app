@@ -19,6 +19,7 @@ import { ShorelineDetailsComponent } from './shoreline-details/shoreline-details
 import { ShorelinesMapComponent } from './shorelines-map/shorelines-map.component';
 import { InfoPanelComponent } from './info-panel/info-panel.component';
 import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
+import { NewsletterService } from './newsletter.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +40,9 @@ import { NewsletterFormComponent } from './newsletter-form/newsletter-form.compo
     AppRouting,
     AgmCoreModule.forRoot({
       apiKey: ENV_VARS.GMAPS_API_KEY
-    })
+    }),
   ],
-  providers: [],
+  providers: [NewsletterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

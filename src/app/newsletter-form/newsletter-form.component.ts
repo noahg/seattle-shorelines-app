@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator } from '@angular/forms';
 
+import { NewsletterService } from './../newsletter.service';
+
 @Component({
   selector: 'newsletter-form',
   templateUrl: './newsletter-form.component.html',
-  styleUrls: ['./newsletter-form.component.css']
+  styleUrls: ['./newsletter-form.component.css'],
+  providers: [NewsletterService]
 })
 export class NewsletterFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private newsletterService: NewsletterService) { }
 
   ngOnInit() {
   }
