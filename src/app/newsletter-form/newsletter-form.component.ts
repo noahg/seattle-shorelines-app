@@ -14,7 +14,7 @@ export class NewsletterFormComponent implements OnInit {
   }
 
   submit(form){
-    console.log(form.value.email)
+    console.log(form)
   }
 
 }

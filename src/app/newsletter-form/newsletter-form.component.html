@@ -1,11 +1,16 @@
 <form #form="ngForm" (ngSubmit)="submit(form)">
-  <md-form-field>
-      <input ngModel 
-             name="email" 
-             mdInput 
-             #email="ngModel"
-             placeholder="e-mail"
-             email>
-  </md-form-field>
-  <button md-raised-button color="primary" [disabled]="!form.valid">Join</button>
+  <div *ngIf="!form.submitted">
+    <md-form-field>
+        <input ngModel 
+              name="email" 
+              mdInput 
+              #email="ngModel"
+              placeholder="e-mail"
+              email>
+    </md-form-field>
+    <button md-raised-button color="primary" [disabled]="!form.valid">Join</button>
+  </div>
+  <div *ngIf="form.submitted">
+      <h3>Thanks we'll be in touch soon!</h3>
+  </div>
 </form>
