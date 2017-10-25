@@ -10,9 +10,7 @@
     </md-form-field>
     <button md-raised-button color="primary" [disabled]="!form.valid">Join</button>
   </div>
-  <div *ngIf="form.submitted">
-      <div *ngIf="submissionResults">
-          <h4>{{ submissionResults.msg }}</h4>
-      </div>
+  <div *ngIf="form.submitted && submissionResults">
+    <h4>{{ submissionResults.msg }}</h4>
   </div>
 </form>
