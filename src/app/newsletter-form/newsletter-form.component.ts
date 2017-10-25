@@ -17,7 +17,7 @@ export class NewsletterFormComponent implements OnInit {
   }
 
   submit(form){
-    console.log(form)
+    this.newsletterService.subscribe(form.value.email)
   }
 
 }
