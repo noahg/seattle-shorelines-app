@@ -11,13 +11,20 @@ import { NewsletterService } from './../newsletter.service';
 })
 export class NewsletterFormComponent implements OnInit {
 
+  submissionResults;
+
   constructor(private newsletterService: NewsletterService) { }
 
   ngOnInit() {
   }
 
-  submit(form){
-    this.newsletterService.subscribe(form.value.email)
+  submit(form) {
+    this.newsletterService.subscribeToNewsLetter(form.value.email)
+      .subscribe(response => {
+        this.submissionResults = response.json()
+      },
+      error => console.log(error),
+     )
   }
 
 }

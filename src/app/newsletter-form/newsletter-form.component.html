@@ -11,6 +11,8 @@
     <button md-raised-button color="primary" [disabled]="!form.valid">Join</button>
   </div>
   <div *ngIf="form.submitted">
-      <h3>Thanks we'll be in touch soon!</h3>
+      <div *ngIf="submissionResults">
+          <h4>{{ submissionResults.msg }}</h4>
+      </div>
   </div>
 </form>
