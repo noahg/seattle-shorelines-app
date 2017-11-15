@@ -9,6 +9,6 @@ import { ShorelineService } from './shoreline.service';
   providers: [ShorelineService]
 })
 export class AppComponent {
-  title = 'Seattle\'s Shoreline Street End Parks';
+  title = 'Seattle\'s Shoreline Street Ends';
   selectedSite = 0;
 }
