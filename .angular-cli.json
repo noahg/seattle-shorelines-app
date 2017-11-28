@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "../seattle-shorelines-dist/dist",
       "assets": [
         "assets",
         "favicon.ico"
