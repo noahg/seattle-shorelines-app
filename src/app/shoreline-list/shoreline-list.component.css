@@ -10,6 +10,7 @@ md-card-title {
 
 .street-end-thumbnail {
     max-height: 200px;
+    min-width: 348px;
 }
 
 .shoreline-name {
