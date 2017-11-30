@@ -8,11 +8,11 @@ The City of Seattle designated 149 public streets in Seattle that end on waterfr
 
 Though some street ends have been improved for public use, nearly two-thirds are in need of improvement, overgrown, or have private encroachments.
 
-Seattle's Department of Transportation (SDOT) has an older web map. I created this one to provide a more mobile friendly version that also has better focus on the site photos.
+Seattle's Department of Transportation (SDOT) has an older web map on their site. I created this one to provide a more mobile friendly version that also has better focus on the site photos.
 
 ## Data Sources
 
-The points are from a shapefile SDOT sent me via email. I converted it to geojson without changing or adding any data or field names. 
+The points are from a shapefile SDOT sent me via email. I converted it to geojson without changing or adding any data or field names. Site numbers (and urls) are the city's provided id.
 
 Geojson data file is in ```/src/data/```
 
